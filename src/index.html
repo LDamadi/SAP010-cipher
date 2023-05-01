@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <title> Projeto Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    
-    <main class="main container">
-      <header class="cabecalho">
-        <h1>Cipher Secure E-mail</h1>
-      </header>
 
-      <div class="container-input">
-        <div class="input">
-          <textarea id="input-texto" placeholder="Digite aqui a senha"></textarea>
-          <p>Utilize apenas letras maiúscula, sem acento</p>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title> Projeto Cipher</title>
+  <style>
+    body { 
+      background-color: black;
+      background-image: url("Imagem/Imagem\ criptografia-1080x675.jpg");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+     </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="root">
+    <h1 id= "nomesite">Cipher Secure E-mail</h1>
+      <p> A senha de seu e-mail protegida com criptografia.</p>
+      <button id="cifrar">Cifrar</button>
+      <button id="decifrar">Decifrar</button>
+  </div>
 
-        <div id="output">
-          <h2>A Mensagem Criptografada aparecerá aqui</h2>
-         
-        </div>
-      </div>
+      <div class="texto">
+      <h3 id="titulo1">Digite aqui a senha que deseja Criptografar:</h3>
+      <textarea rows="4" cols="50"  id="texto" placeholder="Digite aqui sua mensagem"></textarea><br><br>
+      <b>Deslocamento (offset): 6</b>
+      <p>Chave de deslocamento</p>
+      <input type="number" id="offset"><br><br>
+          </div>
+    <div id="result" class="result">
+      <h3 id="titulo2">Mensagem cifrada/decifrada:</h3>
+      <textarea rows="5" cols="70" id="final" placeholder="Mensagem cifrada/decifrada aparecerá aqui"></textarea><br>
+    </div>
+   
+       
+  <footer class="rodape">
+    <h3>Obrigada por usar nossos serviços!
+    </h3>
+  </footer>
 
-      <div class=" buttons">
-        <div class="container-bnt">
-          <button class="btn-criptografar">Criptografar</button>
-          <button class="btn-descriptografar">Descriptografar</button>
+  <script src="index.js" type="module"></script>
+</body>
 
-        </div>
-      </div>
-    </main>
-
-    <footer class="rodape">
-      <h3>Obrigada por usar nossos serviços!
-        
-      </h3>
-    </footer>
-
-           
-      
-    <script src="index.js" type="module"></script>
-  </body>
 </html>
