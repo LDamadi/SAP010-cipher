@@ -4,38 +4,32 @@
 <head>
   <meta charset="utf-8">
   <title> Projeto Cipher</title>
-  <style>
-    body { 
-      background-color: black;
-      background-image: url("Imagem/Imagem\ criptografia-1080x675.jpg");
-      background-position: left center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-     </style>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="root">
     <h1 id= "nomesite">Cipher Secure E-mail</h1>
       <p> A senha de seu e-mail protegida com criptografia.</p>
-      <button onclick="encode('encode')" id="cifrar">Cifrar</button>
-      <button onclick="decode('decode')" id="decifrar">Decifrar</button>
+      
   </div>
-<div
+
       <div class="texto">
       <h3 id="titulo1">Digite aqui a senha que deseja Criptografar:</h3>
-      <textarea rows="4" cols="50"  id="texto" placeholder="Digite aqui sua mensagem"></textarea><br><br>
-      <b>Deslocamento (offset): 6</b>
-      <p>Chave de deslocamento</p>
-      <input type="number" id="offset" value="6"><br><br>
-          </div>
+      
+      <input id="Digite" placeholder= ><br><br>
+      <b>Deslocamento (offset): </b><br><br>
+      <input type="number" id="offset" ><br><br>
+      
+      <button id="cifrar">Cifrar</button>
+      <button id="decifrar">Decifrar</button>
+      </div>
     <div id="result" class="result">
       <h3 id="titulo2">Mensagem cifrada/decifrada:</h3>
-      <textarea rows="5" cols="70" id="final" placeholder="Mensagem cifrada/decifrada aparecerá aqui"></textarea><br>
+      <input id ="outputEncode">
+      <input id="outputDecode">
     </div>
-   
-       
+          
   <footer class="rodape">
     <h3>Obrigada por usar nossos serviços!
     </h3>
