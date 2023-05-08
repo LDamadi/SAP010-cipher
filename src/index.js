@@ -1,15 +1,19 @@
 import cipher from './cipher.js';
-console.log (cipher);
 
 document.getElementById("cifrar").addEventListener("click", myFunction);
-
 function myFunction(){
-const input = document.getElementById("cifrar").value;
+  const texto = document.getElementById("Digite").value; 
+  const offset = parseInt(document.getElementById("offset").value);
+  const mensagemCod = cipher.encode(offset, texto);
+  document.getElementById("outputEncode").value= mensagemCod;
 
-const encode = cipher.encode(input);
-document.getElementById("outputEncode").value=encode
-const decode = cipher.decode(input);
-document.getElementById("outputDecode").value=decode
+}
+document.getElementById("decifrar").addEventListener("click", descriptografar);
+function descriptografar(){
+  const texto = document.getElementById("outputEncode").value; 
+  const offset = parseInt(document.getElementById("offset").value);
+  const descript = cipher.decode(offset, texto);
+  document.getElementById("outputDecode").value=descript;
 
 }
 
