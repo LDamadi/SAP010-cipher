@@ -4,38 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title> Projeto Cipher</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div id="root">
-    <h1 id= "nomesite">Cipher Secure E-mail</h1>
-      <p> A senha de seu e-mail protegida com criptografia.</p>
-      
-  </div>
 
-      <div class="texto">
-      <h3 id="titulo1">Digite aqui a senha que deseja Criptografar:</h3>
-            
-      <input id="Digite">
-      <p1>"SOMENTE LETRAS MAIÚSCULAS E SEM ACENTO"</p1><br><br>
-      <b>Deslocamento (offset): </b><br><br>
-      <input type="number" id="offset" min="0" max="26"><br><br>
-      
-      <button id="cifrar">Cifrar</button>
-      <button id="decifrar">Decifrar</button>
-      </div>
-    <div id="result" class="result">
-      <h3 id="titulo2">Mensagem cifrada/decifrada:</h3>
-      <input id ="outputEncode">
+<body>
+  <header>
+    <h1>Cipher Secure E-mail</h1>
+    <h2> A senha de seu e-mail protegida com criptografia.</h2>
+  </header>
+  <main> <!--Nesta tag esta todo o conteúdo principal da pagina-->
+    <h3>Digite aqui a senha que deseja Criptografar:</h3>
+    <input id="Digite">
+    <p>"SOMENTE LETRAS MAIÚSCULAS E SEM ACENTO"</p>
+    <h3>Deslocamento (offset): </h3>
+    <input type="number" id="offset" min="0" max="26">
+    <button id="cifrar">Cifrar</button>
+    <button id="decifrar">Decifrar</button>
+    <div id="result" class="result"> <!--mantive esta div apenas para não mudar o resultado do index.js-->
+      <h3 id="titulo2">Mensagem cifrada:</h3>
+      <input id="outputEncode">
+      <h3 id="titulo3">Mensagem decifrada:</h3>
       <input id="outputDecode">
     </div>
-          
-  <footer class="rodape">
-    <h3>Obrigada por usar nossos serviços!
-    </h3>
-  </footer>
+  </main>
 
+  <footer class="rodape">
+    <h2>Obrigada por usar nossos serviços!</h2>
+  </footer>
   <script src="index.js" type="module"></script>
 </body>
 
