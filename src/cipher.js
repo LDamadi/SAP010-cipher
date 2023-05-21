@@ -1,8 +1,8 @@
 const cipher = {
   encode: function (desloc, texto) {
-    if (typeof desloc !== 'number' || typeof texto !== 'string') //condição para ver se meu desloc é numero e se meu texto é string//
+    if (typeof desloc !== 'number' || typeof texto !== 'string') //if= se else= senão - o código, neste caso a condição é se meu  desloc é numero e se meu texto é string//
     { throw new TypeError('os argumentos devem ser um number e uma string') }
-    else {
+      else {
       let textoCodificado = "";
       for (let i = 0; i < texto.length; i++) { //Aqui inicia a =estrutura do laço de repetição for// 
         let caracter = texto[i];
